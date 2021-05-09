@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contoh Rumah Hook Minimalis
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Anwar"
+  },
+  "headline": "Contoh Rumah Hook Minimalis",
+  "datePublished": "2021-05-09",
+  "image": "https://i.pinimg.com/564x/19/7a/d8/197ad892f628df1303fb5db5ff5a70cb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=contoh+rumah+hook+minimalis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Contoh Rumah Hook Minimalis
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. cari desain Rumah? cari Aja Disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Contoh Rumah Hook Minimalis</strong>. Aneka contoh model desain dan gambar serta bentuk rumah minimalis sederhana untuk berbagai type baik untuk 1 lantai 2 lantai atau lebih. The Nirmala Garden Gn.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/d7/37/b8/d737b87ac1bd35ff84594d9c976ace51.jpg" alt="65 Desain Rumah Minimalis Modern 2 Lantai Di Hook Desain Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Diatas Dekorasi Luar Ruangan Minimalis Rumah Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylYxFmY0tZIc2pmk_6EcSiij9vH3aKYZdUlo4G44ujkZ61y5_d_fCCdCk-bMZo9cZZRI';">
+        <figcaption>65 Desain Rumah Minimalis Modern 2 Lantai Di Hook Desain Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Diatas Dekorasi Luar Ruangan Minimalis Rumah Minimalis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Sedang mencari model rumah mewah minimalis. Sep 05 2020 Hook rumah minimalis 2 lantai type 36 pojok. Denah dan bentuk rumah sederhana ukuran 6x9 satu lantai Rumah minimalis.
+    </p>
+    <h3>Bagi Anda yang saat ini sedang mencari desain rumah hook impian untuk hunian yang indah dan nyaman berikut ini beberapa contoh diantaranya.</h3>
+    <p>Sep 05 2020 Hook rumah minimalis 2 lantai type 36 pojok. Desain rumah hook 2 muka desain rumah hook 1 lantai desain rumah hook type 100 denah rumah hook 3 kamar tidur desain rumah hook type 36 desain rumah hook type 45 contoh rumah hook minimalis 2 lantai denah rumah hook type 70. Sep 04 2020 Desain pagar rumah hook untuk rumah minimalis yang menarik desain rumah hook seringkali mengalami kesulitan dalam menemukan model pagar yang sesuai. Renovasi Rumah Minimalis di hook.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Small Two Storey House Designs That Can Be Fitted In Small Lot Area Minimalist House Design Modern House Design House Architecture Design" src="https://i.pinimg.com/564x/9f/53/57/9f5357d5a3dff8dd700f954a3cef86fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrzINxNt7-WeJxEVr84oo_XjwYUYl86n2S3S4dr5IUcP64gmn4mbuyAUbUL69QaYC3Wo';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Contoh Desain Rumah Hook yang Inspiratif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Kavling Sudut Hook Desain Rumah Eksterior Home Fashion Rumah Arsitektur" src="https://i.pinimg.com/originals/31/0d/5b/310d5b4d4af9c295d99d8e44bd8934b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd7IZ77KGyksPVCpNHIacSlWfLOVxUkIr1qZXgkSMAPf-CAC4EETn-AyK9jGGvY7OINo';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Contoh Desain Rumah Hook Mewah Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pojok Dengan Konsep Box House Modern Minimalis Rumah Tinggal Semi Basement Diatas Lahan 1 Desain Eksterior Rumah Desain Rumah Desain Rumah Modern" src="https://i.pinimg.com/736x/ea/73/71/ea737161e53392d02cb37be1c8aa6cc5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNf2KIG3APWOKligIHd5IdgWy3_229wj5QPasXj7NLQdHywvtiEQU_DohUMU18mZZmVlI';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Desain rumah dengan posisi hook memiliki berbagai macam tampilan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hook Rumah Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/29/74/d5/2974d5630ec0560d78ad56e382ad10fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRWNK1K4g2CTR5PFBK4fKj-DkNixN-3daaA68M5IKViCfYFabatmlIR64AjcOczn2HDIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Akan tetapi tidak sedikit pula mereka yang masih kebingungan mengenai desain rumah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di My House" src="https://i.pinimg.com/originals/ba/cd/00/bacd00ed9bb873e8f566bfc0516bb384.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIonpm9Hyi3kMF0ZSCGfXN1vWrXOCCELFGI4pID5H3_R8CRlJ4Re-u9IPFgQuiHPTslJg';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Maka kamu wajib melihat Desain Rumah 9 x 12 Hook berikut ini Desain Rumah 9 x 12 Hook 30.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="64 Desain Rumah Minimalis Dua Muka Desain Rumah Minimalis Rumah Minimalis 1 Lantai 2 Muka Desain Rumah Mi Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/29/ef/0a/29ef0ae0084a91eff39aefaddbec8b52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4MraeedaiFZ6srlra0XikORNIr0IYKRI4a7wNkwW2dZQFwhIoHesPAbrmCc_kLS3ivA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bila saat ini anda sedang ingin melakukan pembangunan renovasi maupun hanya sekedar mendesain rumah untuk masa depan tentunya anda mengharapkan ide serta inspirasi pilhan tepat telah berkunjung pada Deagam Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="65 Desain Rumah Minimalis Modern 2 Lantai Di Hook Desain Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Diatas Dekorasi Luar Ruangan Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/d7/37/b8/d737b87ac1bd35ff84594d9c976ace51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylYxFmY0tZIc2pmk_6EcSiij9vH3aKYZdUlo4G44ujkZ61y5_d_fCCdCk-bMZo9cZZRI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh rumah hook 2 lantai gambar atau foto berjudul contoh rumah hook 2 lantai ini adalah bagian dari artikel 20 foto gambar desain rumah hook minimalis modern yang terdapat pada kategori rumah minimalis dan diunggah oleh reni anggraeni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Minimalis Modern 2 Lantai Hook Desain Inspirasi Desain Rumah Hook Bergaya Minimalis Modern Minimalist House Design Two Storey House Facade House" src="https://i.pinimg.com/originals/1f/8d/c7/1f8dc73c0e9cd543e234ea333962ce2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSAi2ggAYFh2JZnODSKRH7Y6E0GrLcxGRukOn9-ZZpJmkd2h9hw7TJhBgqVXwZzI2VCk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Agar memudahkan kita dalam mendesain rumah hook ini mari kita simak beberapa contoh desain rumah hook berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Hook Type 200 M2 Facade House House Styles House Design" src="https://i.pinimg.com/564x/fc/a6/4d/fca64d8815fc043dc0df5f89e7238e4e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiCgTea1HblGwv9FGJYbmys5BmAaXf5JuAGikShkSXqeU_7UWakFsPd5TwBNbnvasU83s';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Gambar Sketsa Desain Rumah 9 x 12 29.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/dekorasi-mushola-di-rumah.html"><i>&larr; dekorasi mushola di rumah</i></a>
+                                                                    
+                                        <a href="/dekorasi-minimalis-sederhana.html"><i>dekorasi minimalis sederhana &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
